@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JioSaavn Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎵 JioSaavn Clone</h1>
+    <input type="text" id="search" placeholder="Search songs...">
+  </header>
+
+  <main>
+    <section class="playlist">
+      <div class="song-card" onclick="playSong('assets/song1.mp3', 'Song One', 'cover1.jpg')">
+        <img src="assets/cover1.jpg" alt="Cover">
+        <p>Song One</p>
+      </div>
+      <div class="song-card" onclick="playSong('assets/song2.mp3', 'Song Two', 'cover1.jpg')">
+        <img src="assets/cover1.jpg" alt="Cover">
+        <p>Song Two</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="now-playing">
+      <img id="cover" src="" alt="" />
+      <div>
+        <p id="song-title">No song playing</p>
+      </div>
+    </div>
+    <audio id="audio-player" controls></audio>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
